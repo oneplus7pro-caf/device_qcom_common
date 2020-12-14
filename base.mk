@@ -849,37 +849,23 @@ endif
 endif
 
 PRODUCT_PACKAGES := \
-    AccountAndSyncSettings \
-    DeskClock \
     AlarmProvider \
-    Calculator \
-    Calendar \
-    Camera \
     CellBroadcastReceiver \
     CertInstaller \
     DrmProvider \
-    Email \
-    Gallery2 \
-    LatinIME \
-    Music \
     netutils-wrapper-1.0 \
-    Phone \
     Provision \
     Protips \
-    QuickSearchBox \
     Settings \
     Sync \
     SystemUI \
     Updater \
-    CalendarProvider \
-    SyncProvider \
     SoundRecorder \
     IM \
     VoiceDialer \
     SnapdragonGallery \
     SnapdragonMusic \
     VideoEditor \
-    SnapdragonLauncher \
     QtiDialer
 
 ifeq ($(TARGET_HAS_LOW_RAM),true)
@@ -890,8 +876,6 @@ else
             LiveWallpapers \
             LiveWallpapersPicker \
             VisualizationWallpapers
-
-    DELAUN := Launcher3
 
     #servicetracker HAL
     PRODUCT_PACKAGES += \
